@@ -12,7 +12,7 @@ html, body {
 
 body {
   align-items: center;
-  background-color: #ffd54f;
+  background-color: #ebae3d;
   display: flex;
   font-family: -apple-system, 
     BlinkMacSystemFont, 
@@ -50,14 +50,9 @@ li span {
   font-size: 4.5rem;
 }
 
-.emoji {
-  display: none;
-  padding: 1rem;
-}
-
-.emoji span {
-  font-size: 4rem;
-  padding: 0 .5rem;
+footer{
+position:absolute;
+bottom:0;
 }
 
 @media all and (max-width: 768px) {
@@ -73,4 +68,30 @@ li span {
   li span {
     font-size: 3.375rem;
   }
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
