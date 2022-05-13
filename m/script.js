@@ -32,7 +32,7 @@
       if (distance2 < 0) { distance2 = 0 }
       if (distance4 < 0) { distance4 = 0 }
 
-      if (max(distance3, distance2, distance4) > 0) {
+      if (Math.max(distance3, distance2, distance4) > 0) {
         resteannee = document.getElementById("resteannee"),
           resteannee.style.display = "none",
 
